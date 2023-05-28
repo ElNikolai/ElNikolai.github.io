@@ -1,0 +1,802 @@
+/* Violet: #2e1065 */
+/* Purple: #3b0764 */
+/* Light Indigo: #a5b4fc */
+
+* {
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+	background: linear-gradient(60deg, indigo, purple, violet);
+	overflow-x: hidden;
+	position: relative;
+	min-height: 100vh;
+}
+
+main {
+	padding-bottom: 8em;
+}
+
+/*#logo {
+	font-size: 30px;
+	font-weight: 600;
+	margin-left: 1.5em;
+	line-height: 85px;
+}
+
+nav {
+	width: 100%;
+	height: 5.5em;
+	font-family: sans-serif;
+	border-bottom: 1px solid white;
+}
+
+nav ul {
+	float: none;
+	position: absolute;
+	text-align: left;
+	background-color: purple;
+	border-left: 5px solid #3b0764;
+	border-bottom: 5px solid #3b0764;
+	border-radius: 0 0 0 5px;
+	width: 200px;
+	height: 500px;
+	right: -100%;
+	top: 90px;
+	margin: 0;
+	transition: all 0.5s;
+}
+
+nav ul li {
+	display: block;
+	margin-top: 30px;
+}
+
+nav ul li a {
+	font-size: 30px;
+	text-decoration: none;
+	line-height: 60px;
+}
+
+nav ul li a:hover {
+	color: #3b0764;
+}
+
+#check {
+	display: none;
+}
+
+.checkbtn {
+	display: block;
+	float: right;
+	margin: 0 30px;
+	line-height: 85px;
+	font-size: 40px;
+}
+
+#check:checked ~ ul {
+	right: -10px;
+}*/
+
+#logo {
+	font-size: 40px;
+	font-weight: 600;
+	margin-left: 2em;
+	line-height: 95px;
+}
+
+nav {
+	width: 100%;
+	height: 6em;
+	font-family: sans-serif;
+	border-bottom: 1px solid white;
+}
+
+nav ul {
+	display: inline-block;
+	float: right;
+	list-style: none;
+	margin-top: 0;
+	margin-right: 2em;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 1.2em;
+}
+
+nav ul li a {
+	line-height: 95px;
+	font-size: 22px;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	color: #3b0764;
+}
+
+#profile {
+	text-align: center;
+	width: 900px;
+}
+
+#profile p {
+	margin: 0;
+}
+
+#profile_picture {
+	width: 650px;
+	gap: 0;
+}
+
+.profile_picture {
+	width: 175px;
+	height: 175px;
+	border-radius: 50%;
+	border: 1px solid #3b0764;
+	
+	background-repeat: no-repeat;
+	background-size: 175px;
+}
+
+#profile_picture_left {
+	background-image: url("Images/Profile_Pictures/A_Night_of_Sleeping_Soundly_Cutout.png");
+	
+	animation: profile_picture_left 30s infinite;
+	animation-delay: 1s;
+}
+
+#profile_picture_middle {
+	width: 200px;
+	height: 200px;
+	
+	background-image: url("Images/Profile_Pictures/Happy_Birthday_Cutout.png");
+	background-size: 200px;
+	
+	animation: profile_picture_middle 30s infinite;
+	animation-delay: 0s;
+}
+
+#profile_picture_right {
+	background-image: url("Images/Profile_Pictures/Secret_Weapon_Phoenix_Robot_Trained_Cutout.png");
+	
+	animation: profile_picture_right 30s infinite;
+	animation-delay: 1s;
+}
+
+@keyframes profile_picture_left {
+	13% {
+		background-image: url("Images/Profile_Pictures/A_Night_of_Sleeping_Soundly_Cutout.png");
+	}
+
+	17% {
+		background-image: url("Images/Profile_Pictures/A_Night_of_Sleeping_Soundly_Trained_Cutout.png");
+	}
+  
+	30% {
+		background-image: url("Images/Profile_Pictures/A_Night_of_Sleeping_Soundly_Trained_Cutout.png");
+	}
+  
+	34% {
+		background-image: url("Images/Profile_Pictures/An_Abrupt_Ordeal_Trained_Cutout.png");
+	}
+  
+	47% {
+		background-image: url("Images/Profile_Pictures/An_Abrupt_Ordeal_Trained_Cutout.png");
+	}
+  
+	51% {
+		background-image: url("Images/Profile_Pictures/Appreciate_That_Spirit_of_Yours_Trained_Cutout.png");
+	}
+	
+	64% {
+		background-image: url("Images/Profile_Pictures/Appreciate_That_Spirit_of_Yours_Trained_Cutout.png");
+	}
+  
+	68% {
+		background-image: url("Images/Profile_Pictures/Blowing_in_the_Evening_Breeze_Trained_Cutout.png");
+	}
+	
+	81% {
+		background-image: url("Images/Profile_Pictures/Blowing_in_the_Evening_Breeze_Trained_Cutout.png");
+	}
+  
+	85% {
+		background-image: url("Images/Profile_Pictures/Endless_Imagination_and_Challenges_Trained_Cutout.png");
+	}
+	
+	96% {
+		background-image: url("Images/Profile_Pictures/Endless_Imagination_and_Challenges_Trained_Cutout.png");
+	}
+	
+	100% {
+		background-image: url("Images/Profile_Pictures/A_Night_of_Sleeping_Soundly_Cutout.png");
+	}
+}
+
+@keyframes profile_picture_middle {
+	13% {
+		background-image: url("Images/Profile_Pictures/Happy_Birthday_Cutout.png");
+	}
+
+	17% {
+		background-image: url("Images/Profile_Pictures/Fantastic_Planner_Trained_Cutout.png");
+	}
+  
+	30% {
+		background-image: url("Images/Profile_Pictures/Fantastic_Planner_Trained_Cutout.png");
+	}
+  
+	34% {
+		background-image: url("Images/Profile_Pictures/I_Can't_Afford_to_Lose_Cutout.png");
+	}
+  
+	47% {
+		background-image: url("Images/Profile_Pictures/I_Can't_Afford_to_Lose_Cutout.png");
+	}
+  
+	51% {
+		background-image: url("Images/Profile_Pictures/Longing_for_the_Old_Days_Trained_Cutout.png");
+	}
+	
+	64% {
+		background-image: url("Images/Profile_Pictures/Longing_for_the_Old_Days_Trained_Cutout.png");
+	}
+  
+	68% {
+		background-image: url("Images/Profile_Pictures/Madness_Beasty_Cutout.png");
+	}
+	
+	81% {
+		background-image: url("Images/Profile_Pictures/Madness_Beasty_Cutout.png");
+	}
+  
+	85% {
+		background-image: url("Images/Profile_Pictures/Rainbow_Cast_Cutout.png");
+	}
+	
+	96% {
+		background-image: url("Images/Profile_Pictures/Rainbow_Cast_Cutout.png");
+	}
+	
+	100% {
+		background-image: url("Images/Profile_Pictures/Happy_Birthday_Cutout.png");
+	}
+}
+
+@keyframes profile_picture_right {
+	13% {
+		background-image: url("Images/Profile_Pictures/Secret_Weapon_Phoenix_Robot_Trained_Cutout.png");
+	}
+
+	17% {
+		background-image: url("Images/Profile_Pictures/Survival_Challenge_Cutout.png");
+	}
+  
+	30% {
+		background-image: url("Images/Profile_Pictures/Survival_Challenge_Cutout.png");
+	}
+  
+	34% {
+		background-image: url("Images/Profile_Pictures/The_Alchemist_Behind_the_Scenes_Trained_Cutout.png");
+	}
+  
+	47% {
+		background-image: url("Images/Profile_Pictures/The_Alchemist_Behind_the_Scenes_Trained_Cutout.png");
+	}
+  
+	51% {
+		background-image: url("Images/Profile_Pictures/The_Laid-Back_Genius_Director_Cutout.png");
+	}
+	
+	64% {
+		background-image: url("Images/Profile_Pictures/The_Laid-Back_Genius_Director_Cutout.png");
+	}
+  
+	68% {
+		background-image: url("Images/Profile_Pictures/The_Words_Thrown_at_Me_Trained_Cutout.png");
+	}
+	
+	81% {
+		background-image: url("Images/Profile_Pictures/The_Words_Thrown_at_Me_Trained_Cutout.png");
+	}
+  
+	85% {
+		background-image: url("Images/Profile_Pictures/Wonderlands×Showtime_Cutout.png");
+	}
+	
+	96% {
+		background-image: url("Images/Profile_Pictures/Wonderlands×Showtime_Cutout.png");
+	}
+	
+	100% {
+		background-image: url("Images/Profile_Pictures/Secret_Weapon_Phoenix_Robot_Trained_Cutout.png");
+	}
+}
+
+#profile h2 {
+	font-size: 3em;
+	color: #3b0764;
+	margin-top: 0.1em;
+	text-shadow: 1px 1px 10px purple;
+}
+
+footer {
+	position: absolute;
+	bottom: -282px;
+	width: 100%;
+	height: auto;
+	border-top: 1px solid white;
+	font-family: Arial;
+	background-color: rgba(59, 7, 100, 0.8);
+}
+
+footer h1 {
+	margin-bottom: 0;
+	font-size: 30px;
+	color: pink;
+	text-shadow: 0px 0px 10px white;
+}
+
+footer h5 {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left: 39px;
+	margin-bottom: 0;
+}
+
+#footer_links {
+	gap: 5em;
+}
+
+#footer_overview {
+	margin-left: 30px;
+}
+
+footer ul {
+	margin: 0;
+	list-style: none;
+}
+
+footer ul li {
+	margin-top: 5px;
+	padding: 0;
+}
+
+footer a {
+	text-decoration: none;
+	color: violet;
+	font-size: 20px;
+}
+
+footer a:hover {
+	color: white;
+}
+
+#footer_comment {
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	width: 600px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+footer p {
+	line-height: 40px;
+	text-align: center;
+	font-size: 15px;
+	font-family: sans-serif;
+	margin: 0;
+	font-size: 15px;
+}
+
+#footer_end {
+	margin-bottom: 10px;
+}
+
+h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 50px;
+	font-family: sans-serif;
+	color: #3b0764;
+	text-shadow: 1px 1px 10px purple;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 35px;
+	font-family: sans-serif;
+	color: #3b0764;
+	text-shadow: 1px 1px 10px purple;
+	padding-left: 18px;
+}
+
+h3 ~ p {
+	margin-top: 0.4em;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+p {
+	font-size: 25px;
+}
+
+strong {
+	color: #a5b4fc;
+}
+
+img {
+	user-select: none;
+}
+
+.orange {
+	color: orange;
+}
+
+.pink {
+	color: pink;
+}
+
+.lightgreen {
+	color: lightgreen;
+}
+
+.violet {
+	color: violet;
+}
+
+.center {
+	text-align: center;
+}
+
+.container {   
+    width: 100%;
+	margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+	position: relative;
+}
+
+.flex_horizontal {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 3em;
+	/*border: 1px solid red;*/
+}
+
+.flex_vertical {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#cards {
+	gap: 5em;
+}
+
+.card {
+	position: relative;
+}
+
+#cards figure {
+	/*border: 1px solid green;*/
+}
+
+#cards figure + img {
+	width: 400px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 25px #555;
+}
+
+#cards figure img {
+	border-radius: 10px;
+	box-shadow: 0px 0px 25px lightblue;
+}
+
+#cards figure figcaption {
+	width: 150px;
+	height: 120px;
+	text-align: center;
+}
+
+.card_front, .card_back {
+	gap: 0;
+}
+
+.card_back {
+	position: absolute;
+	top: 0;
+	opacity: 0;
+}
+
+.card_back span {
+	font-size: 18px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.card_back:hover {
+	opacity: 1;
+	transition: 0.5s;
+}
+
+#Wxs_picture {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: blur(2px);
+	opacity: 0.6;
+	border-radius: 10px;
+	z-index: -1;
+}
+
+#Wxs_logo {
+	width: 30%;
+	margin-top: 1em;
+	margin-bottom: 3em;
+}
+
+#Wxs_group {
+	width: 45%;
+	margin-bottom: 1em;
+}
+
+.cover_card {
+	width: 250px;
+	text-align: center;
+	font-family: sans-serif;
+	position: relative;
+}
+
+.cover_card_front, .cover_card_back {
+	height: 300px;
+	background-color: #f0abfc;
+	border-radius: 10px;
+	border: 5px solid #d946ef;
+}
+
+.cover_card_front h4 {
+	background-color: #e879f9;
+	font-size: 20px;
+	margin-top: 0;
+	line-height: 40px;
+	font-weight: normal;	
+	border-radius: 5px 5px 0 0;
+}
+
+.cover_card_front img {
+	width: 200px;
+	height: 200px;
+}
+
+.cover_card button {
+	background-color: rgba(1, 1, 1, 0);
+	border: none;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cover_card button:focus + .cover_card_front {
+	transform: rotateY(180deg);
+	transition: 1s;
+}
+
+.cover_card button:focus ~ .cover_card_back {
+	transform: rotateY(0deg);
+	transition: 0.5s;
+	transition-delay: 0.25s;
+}
+
+.cover_card_back {
+	width: 240px;
+	position: absolute;
+	top: 0;
+	transform: rotateY(-90deg);
+	background-color: #e879f9;
+}
+
+.cover_card_description h4 {
+	margin: 0 auto;
+	width: 220px;
+	font-size: 20px;
+	background-color: #f0abfc;
+	border-radius: 15px;
+}
+
+.cover_card_description p {
+	margin-top: 8px;
+	font-size: 18px;
+}
+
+.cover_card_description {
+	height: 85px;
+}
+
+.friend_container {
+	width: 1000px;
+	height: auto;
+	margin-top: 40px;
+	background-color:  rgba(255, 255, 119, 0.13);
+	border-radius: 20px;
+	padding: 20px;
+	border: 1px dashed pink;
+}
+
+.friend_section_top {
+	gap: 0;
+}
+
+.friend_container img {
+	width: 250px;
+	height: 250px;
+	float: left;
+	margin-right: 30px;
+	object-fit: cover;
+}
+
+.friend_container:nth-Child(even) img {
+	float: right;
+}
+
+.friend_container table {
+	font-family: ;
+	text-align: left;
+	float: left;
+	margin-bottom: 30px;
+	height: 200px;
+}
+
+.friend_container table tr th {
+	height: 20px;
+	font-size: 35px;
+	font-family: Arial;
+}
+
+.friend_container table tr td {
+	padding: 0 10px;
+	vertical-align: text-top;
+}
+
+.friend_container table tr td:nth-Child(odd) {
+	font-weight: bold;
+	width: 150px;
+}
+
+.friend_container table tr td:nth-Child(even) {
+	width: 150px;
+}
+
+.friend_container a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-family: Arial;
+	background-color: violet;
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.button {
+	margin-top: 40px;
+	
+	animation: button 3s infinite;
+}
+
+.friend_container a:hover {
+	opacity: 0.8;
+}
+
+@keyframes button {
+	10% {
+		translate: 0px -5px;
+	}
+	
+	20% {
+		translate: 0px 0px;
+	}
+}
+
+@media (min-width: 475px) {
+	.container {
+		max-width: 475px;
+	}
+}
+
+@media (min-width: 640px) {
+	.container {
+		max-width: 640px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 768px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		max-width: 1024px;
+	}
+	
+/*	.checkbtn {
+		display: none;
+	}
+	
+#logo {
+	font-size: 40px;
+	font-weight: 600;
+	margin-left: 2em;
+	line-height: 95px;
+}
+
+nav {
+	width: 100%;
+	height: 6em;
+	font-family: sans-serif;
+	border-bottom: 1px solid white;
+}
+
+nav ul {
+	display: inline-block;
+	float: right;
+	list-style: none;
+	margin-top: 0;
+	margin-right: 2em;
+	top: 0;
+	right: 0;
+	border: none;
+	background-color: none;
+	position: relative;
+	text-align: center;
+	width: 0;
+	height: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 1em;
+}
+
+nav ul li a {
+	line-height: 95px;
+	font-size: 25px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	color: #3b0764;
+}*/
+
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1280px;
+	}
+}
+
+@media (min-width: 1536px) {
+	.container {
+		max-width: 1536px;
+	}
+}
