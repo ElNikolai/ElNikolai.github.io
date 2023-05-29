@@ -173,11 +173,11 @@ nav ul li a:hover {
 	}
   
 	34% {
-		background-image: url("Images/Profile_Pictures/I_Can't_Afford_to_Lose_Cutout.png");
+		background-image: url("Images/Profile_Pictures/I_Cant_Afford_to_Lose_Cutout.png");
 	}
   
 	47% {
-		background-image: url("Images/Profile_Pictures/I_Can't_Afford_to_Lose_Cutout.png");
+		background-image: url("Images/Profile_Pictures/I_Cant_Afford_to_Lose_Cutout.png");
 	}
   
 	51% {
@@ -247,11 +247,11 @@ nav ul li a:hover {
 	}
   
 	85% {
-		background-image: url("Images/Profile_Pictures/Wonderlands×Showtime_Cutout.png");
+		background-image: url("Images/Profile_Pictures/WonderlandsxShowtime_Cutout.png");
 	}
 	
 	96% {
-		background-image: url("Images/Profile_Pictures/Wonderlands×Showtime_Cutout.png");
+		background-image: url("Images/Profile_Pictures/WonderlandsxShowtime_Cutout.png");
 	}
 	
 	100% {
@@ -607,24 +607,42 @@ img {
 	height: 200px;
 }
 
+#allgemeine_daten table {
+	text-align: left;
+	height: 200px;
+}
+
+#allgemeine_daten table:nth-Child(2) {
+	float: left;
+}
+
 .friend_container table tr th {
 	height: 20px;
 	font-size: 35px;
 	font-family: Arial;
 }
 
-.friend_container table tr td {
+table tr td {
 	font-size: 20px;
 	padding: 0 10px;
 	vertical-align: text-top;
 }
 
-.friend_container table tr td:nth-Child(odd) {
+#allgemeine_daten {
+	gap: 0;
+	justify-content: center;
+}
+
+#allgemeine_daten table tr td {
+	font-size: 20px;
+}
+
+table tr td:nth-Child(odd) {
 	font-weight: bold;
 	width: 150px;
 }
 
-.friend_container table tr td:nth-Child(even) {
+table tr td:nth-Child(even) {
 	width: 150px;
 }
 
