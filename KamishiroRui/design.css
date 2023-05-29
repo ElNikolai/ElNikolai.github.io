@@ -268,7 +268,7 @@ nav ul li a:hover {
 
 footer {
 	position: absolute;
-	bottom: -282px;
+	bottom: -287px;
 	width: 100%;
 	height: auto;
 	border-top: 1px solid white;
@@ -321,9 +321,9 @@ footer a:hover {
 #footer_comment {
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
-	width: 600px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	width: 100%;
+	margin-top: 15px;
+	background-color: rgba(59, 7, 100, 0.9);
 }
 
 footer p {
@@ -336,7 +336,12 @@ footer p {
 }
 
 #footer_end {
-	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-color: rgba(59, 7, 100, 0.9);
 }
 
 h2 {
