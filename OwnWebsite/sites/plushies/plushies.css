@@ -1,0 +1,171 @@
+@import url("../../style.css");
+
+#main > div:first-child {
+  text-align: center;
+  margin: 10px;
+}
+
+#plushies_display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.plushies_display {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: 1000px;
+  margin: 20px 0;
+  transition: 0.25s;
+}
+
+.plushies_display div {
+  position: relative;
+  background: var(--image);
+  background-size: cover;
+  height: 300px;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plushies_display div::before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(var(--lightGreen), transparent, transparent, transparent, var(--lightGreen));
+}
+
+#plushies_display:has(.plushies_display:hover) .plushies_display div {
+  filter: grayscale(1);
+}
+
+#plushies_display:has(.plushies_display div:hover) .plushies_display div:hover {
+  filter: grayscale(0);
+}
+
+.plushies_display:has(div:nth-child(1):hover) {
+  grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+
+.plushies_display:has(div:nth-child(2):hover) {
+  grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+
+.plushies_display:has(div:nth-child(3):hover) {
+  grid-template-columns: 0.5fr 0.5fr 2fr 0.5fr 0.5fr 0.5fr;
+}
+
+.plushies_display:has(div:nth-child(4):hover) {
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 2fr 0.5fr 0.5fr;
+}
+
+.plushies_display:has(div:nth-child(5):hover) {
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 2fr 0.5fr;
+}
+
+.plushies_display:has(div:nth-child(6):hover) {
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
+}
+
+.plushies_display div::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 340px;
+  font-weight: 600;
+  background: var(--midGreen01);
+  font-size: 1em;
+  padding: 5px 30px;
+  border-radius: 5px;
+  letter-spacing: 5px;
+  opacity: 0;
+  transition: 0.25s;
+}
+
+.plushies_display div:hover::after {
+  opacity: 1;
+  top: 310px;
+  transition-delay: 0.25s;
+}
+
+#plushy_infobox {
+  position: fixed;
+  top: 100px;
+  width: 100px;
+  height: 500px;
+  padding: 25px 10px;
+  
+  transition: 0.5s;
+  z-index: -100;
+  opacity: 0;
+}
+
+#plushy_infobox::before {
+  content: ' ';
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: -10;
+}
+
+#plushy_infobox::after {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  z-index: -10;
+  background: var(--lightGreen);
+  border: 10px solid var(--midGreen02);
+  border-radius: 10px;
+}
+
+#plushy_infobox button {
+  float: right;
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--midGreen02);
+  background: var(--midGreen01);
+  border-radius: 10px;
+  border: 5px solid var(--midGreen02);
+  transition: 0.25s;
+}
+
+#plushy_infobox button:hover {
+  opacity: 0.75;
+}
+
+#plushy_infobox h2 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin: 0 10px;
+}
+
+#plushy_family, #plushy_birthday {
+  font-size: 20px;
+  margin: 2px 15px;
+}
+
+#plushy_birthday::before {
+  content: 'Birthday: ';
+}
+
+#plushy_family::before {
+  content: 'Family: ';
+}
+
+#plushy_description {
+  font-size: 20px;
+  margin: 10px 15px;
+}

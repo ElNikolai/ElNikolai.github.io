@@ -1,0 +1,59 @@
+@import url("../../style.css");
+
+#main > div:first-child {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+#lego_themes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+#lego_themes .lego_container {
+  width: 400px;
+}
+
+#lego_themes .lego_container h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+}
+
+#lego_themes .lego_container img {
+  width: 150px;
+  margin-left: 125px;
+  margin-bottom: 10px;
+}
+
+#lego_themes .lego_container .sets_container {
+  background-color: var(--midGreen01);
+  height: 300px;
+  padding: 0 10px;
+  border-radius: 5px;
+  overflow-y: auto;
+  box-shadow: 0px 0px 5px var(--darkGreen);
+}
+
+#lego_themes .lego_container .sets_container .lego_set{
+  border-bottom: var(--midGreen02) solid 2px;
+  padding: 10px 0;
+}
+
+#lego_themes .lego_container .sets_container .lego_set:last-child {
+  border-bottom: 0;
+}
+
+#lego_themes .lego_container .sets_container .lego_set p {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#lego_themes .lego_container .sets_container .lego_set h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
