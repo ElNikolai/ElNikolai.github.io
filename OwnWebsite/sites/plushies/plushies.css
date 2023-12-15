@@ -11,6 +11,11 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  background: 
+    linear-gradient(160deg, transparent 10%, var(--niceGreenLight) 10%),
+    linear-gradient(-160deg, transparent 10%, var(--midGreen01) 10%);
+  background-size: 6rem;
+  padding-top: 120px;
 }
 
 .plushies_display {
@@ -31,14 +36,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 5px solid var(--niceGreen);
+  border-radius: 7.5px;
+  box-shadow: 5px 5px 0px var(--niceGreen);
 }
 
 .plushies_display div::before {
   content: ' ';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(var(--lightGreen), transparent, transparent, transparent, var(--lightGreen));
+  position: relative;
 }
 
 #plushies_display:has(.plushies_display:hover) .plushies_display div {
@@ -89,7 +94,7 @@
 
 .plushies_display div:hover::after {
   opacity: 1;
-  top: 310px;
+  top: 320px;
   transition-delay: 0.25s;
 }
 
