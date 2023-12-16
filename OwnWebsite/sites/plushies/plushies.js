@@ -38,7 +38,7 @@ const plushy_infos = [
   {
     name: "Pattie",
     birthday: "-",
-    family: "BUM BUMZ (BreakfastBumz)",
+    family: "BumBumz (BreakfastBumz)",
     description: "-"
   },
   {
