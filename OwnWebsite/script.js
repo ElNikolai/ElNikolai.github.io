@@ -9,3 +9,22 @@ if (navigator.userAgent.match(/samsung/i)) {
     "We recommend FireFox, Microsoft Edge, or Google Chrome.");
   }
 }*/
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.isIntersecting) {
+      if (entry.target.classList.contains('hidden_fade')){
+        entry.target.classList.add('show_fade');
+      } else if (entry.target.classList.contains('hidden_slideFromLeft')){
+        entry.target.classList.add('show_slideFromLeft');
+      }
+    } else {
+      entry.target.classList.remove('show_fade');
+      entry.target.classList.remove('show_slideFromLeft');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden_fade, .hidden_slideFromLeft');
+hiddenElements.forEach((el) => observer.observe(el));

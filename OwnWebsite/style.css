@@ -5,6 +5,8 @@
   --lightGreen: #FAF1E4;
   --niceGreen: #269066;
   --niceGreenLight: #33BB80;
+  
+  --animationDelay: 0ms;
 }
 
 * {
@@ -41,6 +43,29 @@ body {
 
 p {
   font-size: 20px;
+}
+
+.hidden_fade {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show_fade {
+  opacity: 1;
+}
+
+.hidden_slideFromLeft {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+  transition-delay: var(--animationDelay);
+}
+
+.show_slideFromLeft {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 #title {
