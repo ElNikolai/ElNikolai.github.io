@@ -18,13 +18,16 @@ const observer = new IntersectionObserver((entries) => {
         entry.target.classList.add('show_fade');
       } else if (entry.target.classList.contains('hidden_slideFromLeft')){
         entry.target.classList.add('show_slideFromLeft');
+      } else if (entry.target.classList.contains('hidden_slideFromBottom')) {
+        entry.target.classList.add('show_slideFromBottom');
       }
     } else {
       entry.target.classList.remove('show_fade');
       entry.target.classList.remove('show_slideFromLeft');
+      entry.target.classList.remove('show_slideFromBottom');
     }
   });
 });
 
-const hiddenElements = document.querySelectorAll('.hidden_fade, .hidden_slideFromLeft');
+const hiddenElements = document.querySelectorAll('.hidden_fade, .hidden_slideFromLeft, .hidden_slideFromBottom');
 hiddenElements.forEach((el) => observer.observe(el));

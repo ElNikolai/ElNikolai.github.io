@@ -47,14 +47,14 @@ p {
 }
 
 button {
-  background-color: var(--niceGreenLight);
+  background-color: greenyellow;
   border: none;
   border-radius: 10px;
   font-size: 20px;
   padding: 10px 15px;
-  box-shadow: 0 5px 0 var(--niceGreen);
+  box-shadow: 0 5px 0 yellowgreen;
   font-weight: 600;
-  color: var(--darkGreen);
+  color: black;
   transition: 0.25s;
 }
 
@@ -89,6 +89,20 @@ button:active {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+.hidden_slideFromBottom {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(25%);
+  transition: all 1s;
+  transition-delay: var(--animationDelay);
+}
+
+.show_slideFromBottom {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
 }
 
 #title {
@@ -140,24 +154,54 @@ nav {
   width: 100%;
 }
 
+#interests_programming {
+  background-color: var(--midGreen01); 
+  width: 100%;
+  margin-top: 60px;
+  padding: 30px 0 60px 0;
+}
+
+#interests_programming > h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 3em;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.025em;
+}
+
+#interests_programming > div {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  flex-wrap: wrap;
+  width: 850px;
+}
+
+#interests_programming div .card {
+  width: 45%;
+}
+
 #interests {
-  margin: 30px 0;
+  margin: 60px auto;
   display: flex;
   justify-content: center; 
-  gap: 50px;
+  gap: 70px;
   flex-wrap: wrap;
+  width: 850px;
 }
 
 .card {
   position: relative;
   border: 0px solid black;
-  border-radius: 5px;
-  width: 350px;
+  border-radius: 10px;
+  width: 225px;
+  height: 260px;
+  padding: 5px;
   box-shadow: 0px 0px 10px var(--darkGreen);
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-image: var(--img);
+  background-size: cover;
 }
 
 .card button {
@@ -168,18 +212,25 @@ nav {
   opacity: 0;
 }
 
-.card h2 {
-  font-weight: 600;
-  font-size: 2em;
+.card div {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-bottom: 10px;
 }
 
-.card img {
-  margin: 10px;
-  width: 200px;
+.card h2 {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 0 2px;
 }
 
 .card .description {
-  text-align: center;
+  color: white;
+  width: 100%;
+  font-size: 1em;
+  padding: 0 2px;
 }
 
 #aboutMe {
