@@ -9,7 +9,6 @@ if (navigator.userAgent.match(/samsung/i)) {
     "We recommend FireFox, Microsoft Edge, or Google Chrome.");
   }
 }*/
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
