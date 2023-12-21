@@ -154,14 +154,14 @@ nav {
   width: 100%;
 }
 
-#interests_programming {
+.colored-section {
   background-color: var(--midGreen01); 
   width: 100%;
   margin-top: 60px;
   padding: 30px 0 60px 0;
 }
 
-#interests_programming > h2 {
+.colored-section > h2 {
   text-align: center;
   margin-bottom: 35px;
   font-size: 3em;
@@ -170,7 +170,7 @@ nav {
   letter-spacing: 0.025em;
 }
 
-#interests_programming > div {
+.colored-section > div {
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -179,8 +179,12 @@ nav {
   width: 850px;
 }
 
-#interests_programming div .card {
+.colored-section .two-column .card {
   width: 45%;
+}
+
+.colored-section .one-column .card {
+  width: 100%;
 }
 
 #interests {
@@ -214,25 +218,99 @@ nav {
 
 .card div {
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   bottom: 0;
+  left: 0;
   margin-bottom: 10px;
+  padding: 0 5px;
 }
 
 .card h2 {
   color: white;
   font-weight: 600;
   font-size: 1.2em;
-  padding: 0 2px;
 }
 
 .card .description {
+  margin-top: 5px;
   color: white;
-  width: 100%;
   font-size: 1em;
-  padding: 0 2px;
+}
+
+.card:hover div {
+  animation: cardHover 0.5s 1 forwards;
+}
+
+@keyframes cardHover {
+  0% {opacity: 1;}
+  25% {opacity: 0;}
+  75% {
+    height: 75%;
+    inset: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 5px;
+    
+    filter: blur(5px);
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    height: 75%;
+    inset: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 5px;
+    
+    filter: blur(0);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card:hover .description {
+  animation: cardHoverDescription 0.5s 1 forwards;
+}
+
+@keyframes cardHoverDescription {
+  75% {
+    padding: 0 10px;
+    text-align: center;
+  }
+  100% {
+    padding: 0 10px;
+    text-align: center;
+  }
+}
+
+.card::before {
+  content: ' ';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.card:hover::before {
+  opacity: 1;
 }
 
 #aboutMe {
   
+}
+
+#footer {
+  height: 50px;
 }
