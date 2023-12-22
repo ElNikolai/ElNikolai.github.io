@@ -11,14 +11,16 @@ if (navigator.userAgent.match(/samsung/i)) {
 }*/
 
 //-------------------page transition-------------------------
-const transition_el = document.querySelector('.transition');
+const transition_el;
 
 window.onload = () => {
-  const anchors = document.querySelectorAll('.link');
+  transition_el = document.querySelector('.transition');
   
   setTimeout(() => {
     transition_el.classList.remove('is-active');
   }, 500);
+  
+  const anchors = document.querySelectorAll('.link');
   
   for (let i = 0; i < anchors.length; i++) {
     const anchor = anchors[i];
