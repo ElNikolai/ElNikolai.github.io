@@ -106,6 +106,21 @@ button:active {
   transform: translateY(0);
 }
 
+.transition {
+  position: fixed;
+  height: 100%;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  z-index: 105;
+  background-color: black;
+  transition: 0.5s ease-oute;
+}
+
+.transition.is-active {
+  bottom: 0;
+}
+
 #title {
   width: 100%;
   height: 500px;
