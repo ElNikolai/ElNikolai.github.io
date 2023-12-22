@@ -17,8 +17,8 @@ window.onload = () => {
   transition_el = document.querySelector('.transition');
   
   setTimeout(() => {
-    transition_el.classList.remove('is-active');
-  }, 500);
+    transition_el.classList.remove('is-active-end');
+  }, 750);
   
   const anchors = document.querySelectorAll('.link');
   
@@ -34,11 +34,11 @@ window.onload = () => {
 }
 
 function loadPage(_target) {
-  transition_el.classList.add('is-active');
+  transition_el.classList.add('is-active-start');
   
   setTimeout(() => {
     window.location.href = _target;
-  }, 500);
+  }, 750);
 }
 
 
