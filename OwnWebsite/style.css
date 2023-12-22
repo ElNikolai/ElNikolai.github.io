@@ -114,7 +114,7 @@ button:active {
   bottom: -100%;
   z-index: 105;
   background-color: black;
-  transition: 0.5s ease-oute;
+  transition: 0.5s ease-out;
 }
 
 .transition.is-active {
