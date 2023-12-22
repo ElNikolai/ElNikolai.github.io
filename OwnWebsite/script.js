@@ -11,7 +11,7 @@ if (navigator.userAgent.match(/samsung/i)) {
 }*/
 
 //-------------------page transition-------------------------
-const transition_el;
+var transition_el;
 
 window.onload = () => {
   transition_el = document.querySelector('.transition');
