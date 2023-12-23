@@ -140,8 +140,8 @@ button:active {
   position: absolute;
   left: 50%;
   bottom: 65%;
-  width: 20px;
-  height: 20px;
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
   border: 5px dotted white;
   opacity: 0;
